@@ -39,12 +39,27 @@
       sizes="16x16"
       href="favicon-16x16.png"
     />
-    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../static/assets/css/flexslider.css" />
-    <link rel="stylesheet" href="../static/assets/css/jquery.fancybox.css" />
-    <link rel="stylesheet" href="../static/assets/css/main.css" />
-    <link rel="stylesheet" href="../static/assets/css/responsive.css" />
-    <link rel="stylesheet" href="../static/assets/css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='flexslider.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='jquery.fancybox.css')}}"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='responsive.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='animate.min.css')}}"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
