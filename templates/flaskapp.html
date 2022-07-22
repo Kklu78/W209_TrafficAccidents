@@ -68,14 +68,18 @@
     <section class="banner" role="banner">
       <header id="header">
         <div class="header-content clearfix">
-          <a class="logo" href="#"><img src="images/logo.png" alt="" /></a>
+          <a class="logo" href="#"
+            ><img
+              src="{{url_for('static', filename='assets/images/logo.png')}}"
+              alt=""
+          /></a>
           <nav class="navigation" role="navigation">
             <ul class="primary-nav">
-              <li><a href="#features">Features</a></li>
-              <li><a href="#works">Works</a></li>
-              <li><a href="#teams">Our Team</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#download">Download</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#temporal">Temporal</a></li>
+              <li><a href="#weather">Weather</a></li>
+              <li><a href="#road">Road Types</a></li>
+              <li><a href="#france">France</a></li>
             </ul>
           </nav>
           <a href="#" class="nav-toggle">Menu<span></span></a>
@@ -86,12 +90,11 @@
       <div class="container">
         <div class="col-md-10 col-md-offset-1">
           <div class="banner-text text-center">
-            <h1>Your Favorite One Page Multi Purpose Template</h1>
+            <h1>Traffic Accidents</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               commodo cursus magna vel scelerisque nisl consectetur et.
             </p>
-            <a href="#" class="btn btn-large">Find out more</a>
           </div>
           <!-- banner text -->
         </div>
@@ -102,7 +105,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-6 feature text-center">
-            <span class="icon icon-tools"></span>
+            <span class="icon icon-cloud"></span>
             <div class="feature-content">
               <h5>Easily Customised</h5>
               <p>
@@ -113,7 +116,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 feature text-center">
-            <span class="icon icon-desktop"></span>
+            <span class="icon icon-clock"></span>
             <div class="feature-content">
               <h5>Responsive Ready</h5>
               <p>
@@ -124,7 +127,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 feature text-center">
-            <span class="icon icon-lightbulb"></span>
+            <span class="icon icon-streetsign"></span>
             <div class="feature-content">
               <h5>Modern Design</h5>
               <p>
@@ -135,7 +138,7 @@
             </div>
           </div>
           <div class="col-md-4 col-sm-6 feature text-center">
-            <span class="icon icon-genius"></span>
+            <span class="icon icon-globe"></span>
             <div class="feature-content">
               <h5>Clean Code</h5>
               <p>
@@ -171,13 +174,50 @@
       </div>
     </section>
     <!-- features -->
+    <section>
+      <div>
+        <iframe
+          id="temporal"
+          src="https://public.tableau.com/views/TemporalViewofAccidents/TemporalView?:showVizHome=no:embed=true"
+          width="1400"
+          height="875"
+        ></iframe>
+
+        <iframe
+          id="weather"
+          src="https://public.tableau.com/views/TrafficAccidentsWeather/Dashboard1?:showVizHome=no:embed=true"
+          width="1400"
+          height="875"
+        ></iframe>
+
+        <iframe
+          id="road"
+          src="https://public.tableau.com/views/W209FinalProject-AllData/Dashboard1?:showVizHome=no:embed=true"
+          width="1400"
+          height="875"
+        ></iframe>
+
+        <iframe
+          id="france"
+          src="https://public.tableau.com/views/France_sex_dashboard/Dashboard1?:showVizHome=no:embed=true"
+          width="1000"
+          height="875"
+        ></iframe>
+      </div>
+    </section>
 
     <section id="works" class="works section no-padding">
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-1.jpg" class="work-box">
-              <img src="images/work-1.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-1.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-1.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -188,8 +228,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-2.jpg" class="work-box">
-              <img src="images/work-2.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-2.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-2.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -200,8 +246,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-3.jpg" class="work-box">
-              <img src="images/work-3.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-3.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-3.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -212,8 +264,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-4.jpg" class="work-box">
-              <img src="images/work-4.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-4.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-4.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -224,8 +282,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-5.jpg" class="work-box">
-              <img src="images/work-5.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-5.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-5.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -236,8 +300,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-6.jpg" class="work-box">
-              <img src="images/work-6.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-6.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-6.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -248,8 +318,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-7.jpg" class="work-box">
-              <img src="images/work-7.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-7.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-7.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -260,8 +336,14 @@
             </a>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-6 work">
-            <a href="images/work-8.jpg" class="work-box">
-              <img src="images/work-8.jpg" alt="" />
+            <a
+              href="{{url_for('static', filename='assets/images/work-8.jpg')}}"
+              class="work-box"
+            >
+              <img
+                src="{{url_for('static', filename='assets/images/work-8.jpg')}}"
+                alt=""
+              />
               <div class="overlay">
                 <div class="overlay-caption">
                   <h5>Project Name</h5>
@@ -276,12 +358,16 @@
     </section>
     <!-- works -->
 
-    <section id="teams" class="section teams">
+    <section id="about" class="section teams">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="person">
-              <img src="images/team-1.jpg" alt="" class="img-responsive" />
+              <img
+                src="{{url_for('static', filename='assets/images/team-1.jpg')}}"
+                alt=""
+                class="img-responsive"
+              />
               <div class="person-content">
                 <h4>Ruth Wood</h4>
                 <h5 class="role">Founder, CEO</h5>
@@ -314,7 +400,11 @@
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person">
-              <img src="images/team-2.jpg" alt="" class="img-responsive" />
+              <img
+                src="{{url_for('static', filename='assets/images/team-2.jpg')}}"
+                alt=""
+                class="img-responsive"
+              />
               <div class="person-content">
                 <h4>Timothy Reed</h4>
                 <h5 class="role">Co-Founder, Developer</h5>
@@ -349,7 +439,11 @@
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person">
-              <img src="images/team-3.jpg" alt="" class="img-responsive" />
+              <img
+                src="{{url_for('static', filename='assets/images/team-3.jpg')}}"
+                alt=""
+                class="img-responsive"
+              />
               <div class="person-content">
                 <h4>Victoria Valdez</h4>
                 <h5 class="role">UI Designer</h5>
@@ -384,7 +478,11 @@
           </div>
           <div class="col-md-3 col-sm-6">
             <div class="person">
-              <img src="images/team-4.jpg" alt="" class="img-responsive" />
+              <img
+                src="{{url_for('static', filename='assets/images/team-4.jpg')}}"
+                alt=""
+                class="img-responsive"
+              />
               <div class="person-content">
                 <h4>Beverly Little</h4>
                 <h5 class="role">Data Scientist</h5>
@@ -431,7 +529,7 @@
                 <div class="col-md-6">
                   <div class="avatar">
                     <img
-                      src="images/testimonial-1.jpg"
+                      src="{{url_for('static', filename='assets/images/testimonial-1.jpg')}}"
                       alt=""
                       class="img-responsive"
                     />
@@ -453,7 +551,7 @@
                 <div class="col-md-6">
                   <div class="avatar">
                     <img
-                      src="images/testimonial-2.jpg"
+                      src="{{url_for('static', filename='assets/images/testimonial-2.jpg')}}"
                       alt=""
                       class="img-responsive"
                     />
