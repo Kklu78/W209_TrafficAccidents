@@ -53,8 +53,7 @@
                 <div class="banner-text text-center">
                     <h1>Traffic Accidents</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-                        commodo cursus magna vel scelerisque nisl consectetur et.
+                        Fostering tomorrow’s safe roads by sharing insights about traffic accidents and their patterns
                     </p>
                 </div>
                 <!-- banner text -->
@@ -133,128 +132,40 @@
     <!-- features -->
     <section class="charts section">
         <div style="text-align: center">
+            <h2></h2>
+            <p></p>
             <iframe id="temporal"
                 src="https://public.tableau.com/views/TemporalViewofAccidents/TemporalView?:showVizHome=no:embed=true"
                 width="1400" height="875"></iframe>
-
+            <h2>Weather</h2>
+            <p>In the Tableau dashboard below, we analyze correlations between accident severity and different weather
+                conditions, including the weather itself (ex. clear, foggy, rainy, snowy, etc.), lighting conditions
+                (ex. day versus night), and road conditions (ex. dry, flooded, icy, snowy, or wet). There is some
+                correlation between weather and road conditions–for example, when it is rainy, the road is most likely
+                wet–but we included both conditions since the US was entirely missing road conditions but the road
+                conditions still provided a unique perspective about what drivers are facing on the road.
+                These histograms compare accident severity across different conditions. Each histogram chart has a
+                “baseline” category: clear for the weather histogram, daylight for the light histogram, and dry for the
+                road conditions histogram. The bars represent the percent change in average severity compared to this
+                baseline condition. For example, in France, foggy weather conditions are on average 17% more severe than
+                clear conditions. Government officials in France might see this observation and conclude that it could
+                be helpful for vehicles in France to have better headlights that allow drivers to see better through
+                fog.</p>
             <iframe id="weather"
                 src="https://public.tableau.com/views/TrafficAccidentsWeather/Dashboard1?:showVizHome=no:embed=true"
                 width="1400" height="875"></iframe>
-
+            <h2></h2>
+            <p></p>
             <iframe id="road"
                 src="https://public.tableau.com/views/W209FinalProject-AllData/Dashboard1?:showVizHome=no:embed=true"
                 width="1400" height="875"></iframe>
-
+            <h2></h2>
+            <p></p>
             <iframe id="france"
                 src="https://public.tableau.com/views/France_sex_dashboard/Dashboard1?:showVizHome=no:embed=true"
                 width="1000" height="875"></iframe>
         </div>
     </section>
-
-    <section id="works" class="works section no-padding">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-1.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-1.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-2.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-2.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-3.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-3.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-4.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-4.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-5.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-5.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-6.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-6.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-7.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-7.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="{{url_for('static', filename='assets/images/work-8.jpg')}}" class="work-box">
-                        <img src="{{url_for('static', filename='assets/images/work-8.jpg')}}" alt="" />
-                        <div class="overlay">
-                            <div class="overlay-caption">
-                                <h5>Project Name</h5>
-                                <p>Website Design</p>
-                            </div>
-                        </div>
-                        <!-- overlay -->
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- works -->
-
     <section id="team" class="section teams">
         <div class="container">
             <div class="row">
@@ -394,9 +305,7 @@
             <div class="container">
                 <div class="col-md-12">
                     <p>
-                        Copyright © 2015 ActiveBox. All Rights Reserved<br />Made with
-                        <i class="fa fa-heart pulse"></i> by
-                        <a href="http://kamalchaneman.com/">Kamal Chaneman</a>
+                        Copyright © 2022 Accidents Inc. All Rights Reserved
                     </p>
                 </div>
             </div>
