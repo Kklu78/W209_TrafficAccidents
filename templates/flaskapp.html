@@ -36,9 +36,9 @@
                 <nav class="navigation" role="navigation">
                     <ul class="primary-nav">
                         <li><a href="#about">About</a></li>
-                        <li><a href="#temporal">Temporal</a></li>
+                        <li><a href="#temporal">Time</a></li>
                         <li><a href="#weather">Weather</a></li>
-                        <li><a href="#road">Road Types</a></li>
+                        <li><a href="#road">Road Type</a></li>
                         <li><a href="#france">France</a></li>
                         <li><a href="#team">Team</a></li>
                     </ul>
@@ -51,7 +51,7 @@
         <div class="container">
             <div class="col-md-10 col-md-offset-1">
                 <div class="banner-text text-center">
-                    <h1>Traffic Accidents</h1>
+                    <h1 style="">Traffic Accidents</h1>
                     <p>
                         Fostering tomorrow’s safe roads by sharing insights about traffic accidents and their patterns
                     </p>
@@ -210,10 +210,10 @@
             <br>
         </div>
     </section>
-    <section id="team" class="section teams">
+    <section class="section teams">
         <div class="container">
             <h1>Team</h1>
-            <div class="row">
+            <div id="team" class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
                         <img src="{{url_for('static', filename='assets/images/team-1.jpg')}}" alt=""
