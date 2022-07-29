@@ -127,21 +127,25 @@
                 <li>2: severe accident</li>
                 <li>3: extreme or fatal accident</li>
             </ul>
+
+            <h2>Variable Types</h2>
+            <ul style="list-style-type:none">
+                <li>Weather: What was the weather when the accident occurred?
+                </li>
+                <li>Road Type: What type of road did the accident take place on?
+                </li>
+                <li>Road Condition: What was the condition of the road that the accident took place on?
+                </li>
+                <li>Light: What time of day did the accident occur?
+                </li>
+            </ul>
             <h1>Visualizations</h1>
             <h2>Time</h2>
-            <p>In the Tableau dashboard below, we analyze correlations between accident severity and different weather
-                conditions, including the weather itself (ex. clear, foggy, rainy, snowy, etc.), lighting conditions
-                (ex. day versus night), and road conditions (ex. dry, flooded, icy, snowy, or wet). There is some
-                correlation between weather and road conditions–for example, when it is rainy, the road is most likely
-                wet–but we included both conditions since the US was entirely missing road conditions but the road
-                conditions still provided a unique perspective about what drivers are facing on the road.
-                These histograms compare accident severity across different conditions. Each histogram chart has a
-                “baseline” category: clear for the weather histogram, daylight for the light histogram, and dry for the
-                road conditions histogram. The bars represent the percent change in average severity compared to this
-                baseline condition. For example, in France, foggy weather conditions are on average 17% more severe than
-                clear conditions. Government officials in France might see this observation and conclude that it could
-                be helpful for vehicles in France to have better headlights that allow drivers to see better through
-                fog.</p>
+            <p>These graphs below display the number of accidents across different time frames. The first graph shows
+                the number of accidents by month, color-coded by year. The bottom left graph shows the percent of
+                accidents in a country based on the day of week. The bottom right graph shows the percent of accidents
+                in a country based on the hour of day. Click on the Weather, Light, Road Type, and Road Condition
+                filters to view the correlation of such variables on accident frequency.</p>
             <div class="iframe"><iframe id="temporal"
                     src="https://public.tableau.com/views/TemporalViewofAccidents/TemporalView?:showVizHome=no:embed=true"
                     width="1366" height="768"></iframe></div>
@@ -208,6 +212,7 @@
     </section>
     <section id="team" class="section teams">
         <div class="container">
+            <h1>Team</h1>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="person">
