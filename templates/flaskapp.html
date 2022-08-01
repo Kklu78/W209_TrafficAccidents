@@ -65,66 +65,47 @@
             <h1>About</h1>
             <h2>Project Intro & Goals</h2>
             <p>
-                This project analyzes data about vehicle accidents in the US, UK and
-                France with the goal of informing users about patterns in these
-                accidents and potentially how to prevent them. Users of this tool might
-                include governmental authorities and organizations, such as the
-                Department of Transportation in the US, the Secretary of State for
-                Transport in the UK, and the Minister of Transportation in France. These
-                government bodies might use these visualizations to understand the
-                circumstances around traffic accidents, which might help them develop
-                new policies or regulations to improve road safety. This tool is also
-                available to the general public so that they can make informed decisions
-                about where or when they drive and under what conditions, if they have
-                flexibility to choose. While this project is not a study of causation,
-                we hope that by understanding correlations in traffic accidents, our
-                users can understand the circumstances around more frequent and more
-                severe accidents.
+                This project analyzes data about vehicle accidents in the US, UK and France with the goal of informing
+                users about patterns in these accidents and potentially how to prevent them. Users of this tool might
+                include governmental authorities and organizations, such as the Department of Transportation in the US,
+                the Secretary of State for Transport in the UK, and the Minister of Transportation in France. These
+                government bodies might use these visualizations to understand the circumstances around traffic
+                accidents, which might help them develop new policies or regulations to improve road safety. This tool
+                is also available to the general public so that they can make informed decisions about where or when
+                they drive and under what conditions, if they have flexibility to choose. While this project is not a
+                study of causation, we hope that by understanding correlations in traffic accidents, our users can
+                understand the circumstances around more frequent and more severe accidents.
             </p>
             <h2>Datasets</h2>
-            <p>Our datasets combined vary over time, with the US spanning from 2016 to 2021, the UK from 2005 to
-                2014
-                (except 2008), and France from 2005 to 2016. We obtained these datasets through Kaggle, and they can
-                be
+            <p>Our datasets combined vary over time, with the US spanning from 2016 to 2021, the UK from 2005 to 2014
+                (except 2008), and France from 2005 to 2016. We obtained these datasets through Kaggle, and they can be
                 found here: <a href="https://www.kaggle.com/datasets/sobhanmoosavi/us-accidents">US dataset</a>, <a
                     href="https://www.kaggle.com/datasets/daveianhickey/2000-16-traffic-flow-england-scotland-wales">UK
                     dataset</a>, <a
                     href="https://www.kaggle.com/datasets/ahmedlahlou/accidents-in-france-from-2005-to-2016">France
                     dataset</a>.</p>
             <h2>Data Cleaning</h2>
-            <p>We had to clean and process these datasets in order to get them in a usable format to draw
-                conclusions from
-                intranational accidents and to make international comparisons. For example, in the UK dataset, we
-                had to
-                drop duplicate accidents and merge separate datasets across years to create one continuous dataset.
-                For
-                France, we merged separate datasets with different accident characteristics, including holidays,
-                places,
-                users, and vehicles.
-                Finally, to combine the separate datasets for each country together, we identified common features
-                across
-                all countries and standardized the values to make comparisons. There were three themes of features
-                that were
-                found in each country: time-based features, weather data, and road type information. These themes
-                inspired
-                three of our Tableau visualization dashboards.</p>
+            <p>We had to clean and process these datasets in order to get them in a usable format to draw conclusions
+                from intranational accidents and to make international comparisons. For example, in the UK dataset, we
+                had to drop duplicate accidents and merge separate datasets across years to create one continuous
+                dataset. For France, we merged separate datasets with different accident characteristics, including
+                holidays, places, users, and vehicles.</p>
+            <p>Finally, to combine the separate datasets for each country together, we identified common features across
+                all countries and standardized the values to make comparisons. There were three themes of features that
+                were found in each country: time-based features, weather data, and road type information. These themes
+                inspired three of our Tableau visualization dashboards.</p>
 
             <h2>Accident Severity</h2>
             <p>Additionally, each dataset had a measurement of accident severity, which had varying scales for each
-                country.
-                We standardized this feature across the countries to allow users to understand correlations between
-                accident
-                conditions and severity. The US’s severity metric actually measured the accident’s impact on
-                traffic, which
-                we assumed could be generalized to the severity of the accident itself. The US and France measured
-                severity
-                on a scale from 1 to 4, while the UK measured severity on a scale from 1 to 3. For consistency, we
-                converted
-                all countries to a 1 to 3 scale with the following interpretations:</p>
+                country. We standardized this feature across the countries to allow users to understand correlations
+                between accident conditions and severity. The US’s severity metric actually measured the accident’s
+                impact on traffic, which we assumed could be generalized to the severity of the accident itself. The US
+                and France measured severity on a scale from 1 to 4, while the UK measured severity on a scale from 1 to
+                3. For consistency, we converted all countries to a 1 to 3 scale with the following interpretations:</p>
             <ul>
-                <li>1: minor accident</li>
-                <li>2: severe accident</li>
-                <li>3: extreme or fatal accident</li>
+                <li>1: Minor accident</li>
+                <li>2: Severe accident</li>
+                <li>3: Extreme or fatal accident</li>
             </ul>
 
             <h2>Variable Types</h2>
@@ -189,15 +170,13 @@
             <br id="france">
             <br>
             <h2>France Sex Comparison</h2>
-            <p>As France is the only dataset with user data, we extracted and analyzed 2013-2016 accidents in France.
-                The dashboard below splits up users by 2 characteristics, sex and person category (driver, passenger,
-                pedestrian). The top dashboard shows the number of people involved in accidents across all of France,
-                with a clear disparity between male and female drivers. This graph does not identify the user that is
-                the cause of each accident. The bottom graph shows the average injury severity across passengers.
-                Severity is measured on a scale of 1 to 4 (1: No injury, 2: Lightly injured, 3: Serious injury /
-                hospitalized, 4: Killed). We see that there isn't a strong difference between the groups, which is
-                surprising. Relevant filters for road conditions, the use of safety equipment, and road category have
-                been added as well to explore various correlations between these variables. </p>
+            <p>France data is the only dataset with user data. We extracted user data from the dataset and analyzed
+                2013-2016 accidents. The dashboard below splits up users by 2 characteristics, sex and person category
+                (driver, passenger, pedestrian). The top dashboard shows the number of people involved in accidents
+                across all of France, with a clear disparity of male drivers. This graph does not discriminate against
+                the cause of accidents. The bottom graph shows the average injury severity across passengers. We see
+                that there isn't a strong difference between the groups, which is surprising. Relevant filters for road
+                conditions, the use of safety equipment, and road category have been added as well. </p>
             <div class="iframe"><iframe
                     src="https://public.tableau.com/views/France_sex_dashboard/Dashboard1?:showVizHome=no:embed=true"
                     width="1366" height="768"></iframe></div>
